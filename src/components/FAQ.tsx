@@ -4,8 +4,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const FAQ = () => {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+
   const faqs = [
     {
       question: "How does billing work?",
@@ -34,49 +38,68 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 bg-card/30">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section className="py-32 relative overflow-hidden" ref={ref}>
+      <div className="absolute inset-0 bg-gradient-to-b from-card/20 via-transparent to-transparent" />
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <motion.div
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-5xl md:text-7xl font-bold mb-6">
             Frequently Asked <span className="bg-gradient-primary bg-clip-text text-transparent">Questions</span>
           </h2>
-          <p className="text-lg text-muted-foreground">Everything you need to know about RubyTeq</p>
-        </div>
+          <p className="text-xl text-muted-foreground">Everything you need to know about RubyTeq</p>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div>
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.slice(0, 3).map((faq, index) => (
-                <AccordionItem
+                <motion.div
                   key={index}
-                  value={`item-${index}`}
-                  className="bg-gradient-card border border-border rounded-lg px-6"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <AccordionTrigger className="text-foreground hover:text-primary text-left">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
+                  <AccordionItem
+                    value={`item-${index}`}
+                    className="bg-gradient-card border border-border rounded-2xl px-6 hover:border-primary/50 transition-all hover:shadow-glow"
+                  >
+                    <AccordionTrigger className="text-foreground hover:text-primary text-left text-lg font-semibold">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </motion.div>
               ))}
             </Accordion>
           </div>
           <div>
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.slice(3).map((faq, index) => (
-                <AccordionItem
+                <motion.div
                   key={index + 3}
-                  value={`item-${index + 3}`}
-                  className="bg-gradient-card border border-border rounded-lg px-6"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <AccordionTrigger className="text-foreground hover:text-primary text-left">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
+                  <AccordionItem
+                    value={`item-${index + 3}`}
+                    className="bg-gradient-card border border-border rounded-2xl px-6 hover:border-primary/50 transition-all hover:shadow-glow"
+                  >
+                    <AccordionTrigger className="text-foreground hover:text-primary text-left text-lg font-semibold">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </motion.div>
               ))}
             </Accordion>
           </div>
