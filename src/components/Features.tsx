@@ -11,37 +11,37 @@ const Features = () => {
       icon: Shield,
       title: "OWASP Top 10",
       description: "Comprehensive scanning for the most critical web application security risks.",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-cyan-600 to-blue-600",
     },
     {
       icon: Sparkles,
       title: "AI Remediation",
       description: "Intelligent, automated fixes powered by advanced AI technology.",
-      color: "from-purple-500 to-pink-500",
+      color: "from-purple-600 to-indigo-600",
     },
     {
       icon: CheckCircle,
       title: "Owner Verification",
       description: "Secure domain ownership validation before scanning begins.",
-      color: "from-green-500 to-emerald-500",
+      color: "from-teal-600 to-cyan-600",
     },
     {
       icon: Globe,
       title: "Ghana DPA‑Aware",
       description: "Fully compliant with Ghana Data Protection Act requirements.",
-      color: "from-orange-500 to-yellow-500",
+      color: "from-blue-600 to-indigo-600",
     },
     {
       icon: Zap,
       title: "Fast & Safe",
       description: "Lightning-fast scans without disrupting your business operations.",
-      color: "from-indigo-500 to-blue-500",
+      color: "from-indigo-600 to-purple-600",
     },
     {
       icon: CreditCard,
       title: "Local Payments",
       description: "Pay easily with Mobile Money (MTN, Vodafone, AirtelTigo).",
-      color: "from-pink-500 to-rose-500",
+      color: "from-cyan-600 to-teal-600",
     },
   ];
 

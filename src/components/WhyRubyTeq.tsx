@@ -11,19 +11,19 @@ const WhyRubyTeq = () => {
       icon: Zap,
       title: "Simple & Fast",
       description: "No complex setup required. Get your security report in minutes, not days.",
-      gradient: "from-yellow-500 to-orange-500",
+      gradient: "from-cyan-600 to-blue-600",
     },
     {
       icon: MapPin,
       title: "Ghanaian Businesses",
       description: "Built for Ghana. Local compliance, support in your timezone, and understanding of local needs.",
-      gradient: "from-green-500 to-teal-500",
+      gradient: "from-teal-600 to-cyan-600",
     },
     {
       icon: CreditCard,
       title: "Mobile Money",
       description: "Pay easily with MTN, Vodafone, or AirtelTigo Mobile Money. No credit card needed.",
-      gradient: "from-blue-500 to-indigo-500",
+      gradient: "from-blue-600 to-indigo-600",
     },
   ];
 

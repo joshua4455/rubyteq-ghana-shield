@@ -10,19 +10,19 @@ const HowItWorks = () => {
       icon: CheckCircle2,
       title: "Verify Domain",
       description: "Confirm ownership of your domain through our secure verification process.",
-      gradient: "from-blue-500 to-cyan-500",
+      gradient: "from-cyan-600 to-blue-600",
     },
     {
       icon: Search,
       title: "Run Scan",
       description: "Our AI-powered scanner analyzes your website for OWASP Top 10 vulnerabilities.",
-      gradient: "from-purple-500 to-pink-500",
+      gradient: "from-blue-600 to-purple-600",
     },
     {
       icon: Download,
       title: "Download Report",
       description: "Get a detailed security report with AI-generated remediation recommendations.",
-      gradient: "from-pink-500 to-orange-500",
+      gradient: "from-purple-600 to-indigo-600",
     },
   ];
 

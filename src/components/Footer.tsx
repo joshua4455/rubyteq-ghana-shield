@@ -45,7 +45,7 @@ const Footer = () => {
                 href="https://linkedin.com/company/rubyteq"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center hover:shadow-glow transition-all"
+                className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-600 to-blue-600 flex items-center justify-center hover:shadow-glow transition-all"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -55,7 +55,7 @@ const Footer = () => {
                 href="https://twitter.com/rubyteq"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center hover:shadow-glow transition-all"
+                className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center hover:shadow-glow transition-all"
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -102,7 +102,7 @@ const Footer = () => {
             <h4 className="font-bold text-foreground mb-6 text-lg">Contact</h4>
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-600 to-blue-600 flex items-center justify-center">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
                 <a href="mailto:contact@rubyteq.com" className="text-muted-foreground hover:text-primary transition-colors">
@@ -110,7 +110,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal-600 to-cyan-600 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
                 <a href="https://wa.me/233597095202" className="text-muted-foreground hover:text-primary transition-colors">

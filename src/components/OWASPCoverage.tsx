@@ -6,16 +6,16 @@ const OWASPCoverage = () => {
   const { ref, isVisible } = useScrollAnimation(0.1);
 
   const owaspItems = [
-    { icon: Lock, title: "Broken Access Control", description: "A01:2021", color: "from-red-500 to-orange-500" },
-    { icon: Code, title: "Cryptographic Failures", description: "A02:2021", color: "from-orange-500 to-yellow-500" },
-    { icon: AlertTriangle, title: "Injection", description: "A03:2021", color: "from-yellow-500 to-green-500" },
-    { icon: Settings, title: "Insecure Design", description: "A04:2021", color: "from-green-500 to-teal-500" },
-    { icon: FileCode, title: "Security Misconfiguration", description: "A05:2021", color: "from-teal-500 to-cyan-500" },
-    { icon: Bug, title: "Vulnerable Components", description: "A06:2021", color: "from-cyan-500 to-blue-500" },
-    { icon: Key, title: "Authentication Failures", description: "A07:2021", color: "from-blue-500 to-indigo-500" },
-    { icon: Database, title: "Data Integrity Failures", description: "A08:2021", color: "from-indigo-500 to-purple-500" },
-    { icon: Server, title: "Security Logging Failures", description: "A09:2021", color: "from-purple-500 to-pink-500" },
-    { icon: Shield, title: "Server-Side Request Forgery", description: "A10:2021", color: "from-pink-500 to-red-500" },
+    { icon: Lock, title: "Broken Access Control", description: "A01:2021", color: "from-cyan-600 to-blue-600" },
+    { icon: Code, title: "Cryptographic Failures", description: "A02:2021", color: "from-blue-600 to-indigo-600" },
+    { icon: AlertTriangle, title: "Injection", description: "A03:2021", color: "from-indigo-600 to-purple-600" },
+    { icon: Settings, title: "Insecure Design", description: "A04:2021", color: "from-purple-600 to-indigo-600" },
+    { icon: FileCode, title: "Security Misconfiguration", description: "A05:2021", color: "from-teal-600 to-cyan-600" },
+    { icon: Bug, title: "Vulnerable Components", description: "A06:2021", color: "from-cyan-600 to-blue-600" },
+    { icon: Key, title: "Authentication Failures", description: "A07:2021", color: "from-blue-600 to-indigo-600" },
+    { icon: Database, title: "Data Integrity Failures", description: "A08:2021", color: "from-indigo-600 to-purple-600" },
+    { icon: Server, title: "Security Logging Failures", description: "A09:2021", color: "from-purple-600 to-indigo-600" },
+    { icon: Shield, title: "Server-Side Request Forgery", description: "A10:2021", color: "from-cyan-600 to-teal-600" },
   ];
 
   return (
